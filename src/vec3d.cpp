@@ -153,11 +153,11 @@ vec3d vec3d::operator - (const vec3d& v){
     return vec3d(this->x - v.x, this->y - v.y, this->z - v.z);
 }
 
-vec3d vec3d::operator * (float n)){
+vec3d vec3d::operator * (float n){
     return vec3d(this->x * n, this->y * n, this->z * n);
 }
 
-vec3d vec3d::operator / (float n)){
+vec3d vec3d::operator / (float n){
     return vec3d(this->x / n, this->y / n, this->z / n);
 }
 
