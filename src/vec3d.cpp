@@ -18,6 +18,7 @@ vec3d::vec3d(float x, float y, float z){
     this->z = z;
 }
 
+
 /** 
  * Logging Function
 */
@@ -130,9 +131,9 @@ vec3d& vec3d::Normalize(){
  * Operator Overloading 
 */    
 vec3d& vec3d::operator = (const vec3d& v){
-   this->x = x;
-   this->y = y;
-   this->z = z;
+   this->x = v.x;
+   this->y = v.y;
+   this->z = v.z;
 
    return *this; 
 }
