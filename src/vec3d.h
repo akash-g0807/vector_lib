@@ -1,6 +1,6 @@
 
-#ifndef VECTOR_2D_H
-#define VECTOR_2D_H
+#ifndef VECTOR_3D_H
+#define VECTOR_3D_H
 
 struct vec3d {
     float x;
@@ -25,8 +25,8 @@ struct vec3d {
     float Magnitude();              // Calculating magnitute/length of vectors
     vec3d Unit_Vector();            // Returns a unit vector of the current vector
     vec3d& Normalize();             // Normalizes the vector
-    vec3d Normal();                 // Calculates the orthogonal vector of current object
-    vec3d Rotate();                 // Rotates vector according to angle given in radians
+    //vec3d Normal();                 // Calculates the orthogonal vector of current object
+    //vec3d Rotate();                 // Rotates vector according to angle given in radians
 
 
     //Vector Operator Overloading
@@ -34,7 +34,7 @@ struct vec3d {
     bool operator == (const vec3d& v);
     bool operator != (const vec3d& v);
     vec3d operator + (const vec3d& v);
-    vec3d operator - (vec3d& v);
+    vec3d operator - (const vec3d& v);
     vec3d operator * (float n);
     vec3d operator / (float n);
     vec3d operator - ();

@@ -125,3 +125,42 @@ vec3d& vec3d::Normalize(){
 
     return *this;
 }
+
+/**
+ * Operator Overloading 
+*/    
+vec3d& vec3d::operator = (const vec3d& v){
+   this->x = x;
+   this->y = y;
+   this->z = z;
+
+   return *this; 
+}
+
+bool vec3d::operator == (const vec3d& v){
+    return this->x == v.x && this->y == v.y && this->z == v.z; 
+}
+
+bool vec3d::operator != (const vec3d& v){
+    return this->x != v.x && this->y != v.y && this->z != v.z;
+}
+
+vec3d vec3d::operator + (const vec3d& v){
+    return vec3d(this->x + v.x, this->y + v.y, this->z + v.z);
+}
+
+vec3d vec3d::operator - (const vec3d& v){
+    return vec3d(this->x - v.x, this->y - v.y, this->z - v.z);
+}
+
+vec3d vec3d::operator * (float n)){
+    return vec3d(this->x * n, this->y * n, this->z * n);
+}
+
+vec3d vec3d::operator / (float n)){
+    return vec3d(this->x / n, this->y / n, this->z / n);
+}
+
+vec3d vec3d::operator - (){
+    return vec3d(-this->x, -this->y, -this->z);
+} 
