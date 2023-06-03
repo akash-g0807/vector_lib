@@ -5,11 +5,12 @@
 struct vec3d {
     float x;
     float y;
+    float z;
 
     // Constructors
     vec3d();
 
-    vec3d(float x, float y);
+    vec3d(float x, float y, float z);
  
     //Deconstructor
     //~vec2d() = default;
