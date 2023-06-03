@@ -111,3 +111,14 @@ vec3d vec3d::Cross_Product(vec3d& u, vec3d& v){
     return perpendicular_vector;    
 }
 
+vec3d& vec3d::Normalize(){
+    float length = Magnitude();
+
+    if(length != 0){
+        this->x = this->x/length;
+        this->y = this->y/length;
+        this->z = this->z/length;
+    }
+
+    return *this;
+}
