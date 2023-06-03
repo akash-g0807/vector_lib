@@ -21,7 +21,7 @@ struct vec3d {
     void Subtract(vec3d& v);        // Subtract vectors vector1.Subtract(vector2)
     float Dot_Product(vec3d& v);    // Calculating Dot Product of 2 vectors vector1.Dot_Product(vector2)
     void Scalar_Mult(float n);      // Scalar Multiplication of vectors
-    float Cross_Product(vec3d& v);  // Cross product magnitude of vectors
+    vec3d Cross_Product(vec3d& v, vec3d& w);  // Cross product magnitude of vectors
     float Magnitude();              // Calculating magnitute/length of vectors
     vec3d Unit_Vector();            // Returns a unit vector of the current vector
     vec3d& Normalize();             // Normalizes the vector

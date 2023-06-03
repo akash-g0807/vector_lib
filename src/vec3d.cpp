@@ -95,6 +95,19 @@ vec3d vec3d::Unit_Vector(){
         unit_Vector.z = z/magnitude;
     }
 
-    return unit_Vector
-
+    return unit_Vector;
 }
+
+/**
+ * Using Cross Product
+*/
+vec3d vec3d::Cross_Product(vec3d& u, vec3d& v){
+    vec3d perpendicular_vector;
+
+    perpendicular_vector.x = (u.y*v.z) - (u.z*v.y);
+    perpendicular_vector.y = (u.z*v.x) - (u.x*v.z);
+    perpendicular_vector.z = (u.x*v.y) - (v.x*u.y);
+
+    return perpendicular_vector;    
+}
+
